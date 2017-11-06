@@ -1,0 +1,24 @@
+{
+  "name": "sync-gateway-users-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladoatanasov/sync-gateway-users-example.git"
+  },
+  "author": "Vladimir Atanasov <vlado.atanasov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladoatanasov/sync-gateway-users-example/issues"
+  },
+  "homepage": "https://github.com/vladoatanasov/sync-gateway-users-example#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "log": [
+      "*"
+    ],
+    "adminInterface": ":4984",
+    "interface": ":4985",
+    "couchbaseKeepaliveInterval": 180,
+    "databases": {
+      "default": {
+        "server": "http://localhost:8091",
+        "bucket": "default",
+        "sync": `function(doc, oldDoc) { 
+            if (doc._deleted) { 
+                requireUser(oldDoc.channel); 
+            } else { 
+                requireUser(doc.channel); 
+                channel(doc.channel); 
+            } 
+        }`,
+        "users": {
+          "admin": {
+            "password": "admin1234",
+            "admin_channels": [
+              "*"
+            ]
+          }
+        }
+      }
+    }
+  }
